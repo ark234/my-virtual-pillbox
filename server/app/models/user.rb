@@ -1,3 +1,4 @@
+# User model
 class User < ApplicationRecord
   PASSWORD_LENGTH = (3..25)
   USERNAME_LENGTH = (3..15)

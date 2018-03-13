@@ -76,7 +76,7 @@ class App extends Component {
 				</div>
 				<BrowserRouter>
 					<Switch>
-						<Route exact path="/" component={props => <Login {...props} submit={this.login.bind(this)} />
+						<Route exact path="/" component={props => <Login {...props} submit={this.login.bind(this)} />} />
 						<Route
 							exact
 							path="/register"
