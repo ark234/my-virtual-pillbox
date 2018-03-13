@@ -9,6 +9,15 @@ import Register from './components/Register';
 import TokenService from './services/TokenService';
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			user: {},
+			token: {}
+		};
+	}
+
 	// API call for registration
 	register(data) {
 		axios('http://localhost:3000/users', {
@@ -17,6 +26,7 @@ class App extends Component {
 		})
 			.then(response => {
 				TokenService.save(response.data.token);
+				console.log('Registration successful. Response Data:', response.data);
 			})
 			.catch(error => console.log(`Error: ${error}`));
 	}
@@ -66,10 +76,10 @@ class App extends Component {
 		return (
 			<div>
 				<div>
-					Weird button: <button onClick={this.authClick.bind(this)}>Weird Button</button>
-					<p>
+					{/* Weird button: <button onClick={this.authClick.bind(this)}>Weird Button</button> */}
+					{/* <p>
 						<button onClick={this.checkLogin.bind(this)}>Check If Logged In</button>
-					</p>
+					</p> */}
 					<p>
 						<button onClick={this.logout.bind(this)}>Logout</button>
 					</p>
@@ -82,7 +92,8 @@ class App extends Component {
 							path="/register"
 							component={props => <Register {...props} submit={this.register.bind(this)} />}
 						/>
-						// <Route exact path="/login" component={props => <Login {...props} submit={this.login.bind(this)} />} />
+						<Route exact path="/home" component={props => <Home {...props} />} />
+						{/* <Route exact path="/login" component={props => <Login {...props} submit={this.login.bind(this)} />} /> */}
 					</Switch>
 				</BrowserRouter>
 			</div>

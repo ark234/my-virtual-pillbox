@@ -15,15 +15,15 @@ class UsersController < ApplicationController
     username = params[:username]
     password = params[:password]
 
-    new_user = User.create(
+    new_user = User.create!(
       password: password,
       username: username
     )
 
     if new_user
-      render json: { token: gen_token(new_user.id) }
+      render json: { user: new_user, token: gen_token(new_user.id) }
     else
-      render json: { err: 'nope' }
+      render nothing: true, status: 401
     end
   end
 
@@ -44,7 +44,7 @@ class UsersController < ApplicationController
 
     user = User.find_from_credentials username, password
     if user.nil?
-      render json: { err: 'No User' }
+      render nothing: true, status: 401
     else
       render json: { user: user, token: gen_token(user.id) }
     end
