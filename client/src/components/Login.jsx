@@ -10,22 +10,18 @@ export default class Login extends Component {
 	}
 
 	onSubmit(data) {
-		console.log(`handling submit: ${data}`);
+		console.log(`handling submit: ${JSON.stringify(data)}`);
 		this.props.submit(data);
+		this.props.history.push('/home');
 	}
 
 	render() {
 		return (
 			<div>
-				<p>Login</p>
+				<h2>Login</h2>
 				<UserForm submit={this.onSubmit} />
 				<p>
-					<Link to="/">
-						<button>Back Home</button>
-					</Link>
-					<Link to="/register">
-						<button>Register</button>
-					</Link>
+					<Link to="/register">Register</Link>
 				</p>
 			</div>
 		);

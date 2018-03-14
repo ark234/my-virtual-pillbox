@@ -10,17 +10,16 @@ export default class Register extends Component {
 
 	onSubmit(data) {
 		this.props.submit(data);
+		this.props.history.push('/home');
 	}
 
 	render() {
 		return (
 			<div>
-				Register
+				<h2>Register</h2>
 				<UserForm submit={this.onSubmit} />
 				<p>
-					<Link to="/">
-						<button>Back Home</button>
-					</Link>
+					<Link to="/">Login</Link>
 				</p>
 			</div>
 		);

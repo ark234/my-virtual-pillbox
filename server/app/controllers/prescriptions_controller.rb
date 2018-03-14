@@ -1,8 +1,11 @@
 class PrescriptionsController < ApplicationController
+	before_action :ensure_signed_in
 	# Retrieve all perscriptions on uid
 	def index
-		prescriptions = User.find(params[:uid]).prescriptions
-		render json: { prescriptions: prescriptions }
+		puts "--->in prescriptions#index"
+		puts "--->uid: #{current_user.id}"
+		# prescriptions = current_user.prescriptions
+		render json: { prescriptions: current_user.prescriptions }
 	end
 
 	# TODO: create new prescription on uid

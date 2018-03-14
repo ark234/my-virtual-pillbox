@@ -13,3 +13,17 @@
 2018-03-13 00:13:43.083 EDT [14272] STATEMENT:  CREATE DATABASE "server_development" ENCODING = 'unicode'
 2018-03-13 00:13:43.162 EDT [4044] ERROR:  database "server_test" already exists
 2018-03-13 00:13:43.162 EDT [4044] STATEMENT:  CREATE DATABASE "server_test" ENCODING = 'unicode'
+2018-03-13 03:10:43.439 EDT [5500] LOG:  statistics collector process (PID 5504) was terminated by exception 0x40010004
+2018-03-13 03:10:43.439 EDT [5500] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2018-03-13 03:10:43.836 EDT [3144] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-03-13 03:10:44.112 EDT [5500] LOG:  autovacuum launcher process (PID 3816) was terminated by exception 0x40010004
+2018-03-13 03:10:44.112 EDT [5500] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2018-03-13 03:10:44.112 EDT [5500] LOG:  terminating any other active server processes
+2018-03-13 03:10:44.227 EDT [5500] LOG:  statistics collector process (PID 14252) was terminated by exception 0xC000026B
+2018-03-13 03:10:44.227 EDT [5500] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2018-03-13 03:10:44.227 EDT [5500] LOG:  all server processes terminated; reinitializing
+2018-03-13 03:10:44.318 EDT [5500] LOG:  startup process (PID 6068) was terminated by exception 0xC000026B
+2018-03-13 03:10:44.318 EDT [5500] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2018-03-13 03:10:44.318 EDT [5500] LOG:  aborting startup due to startup process failure
+2018-03-13 03:10:44.321 EDT [5500] LOG:  database system is shut down
