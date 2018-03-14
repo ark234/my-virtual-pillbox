@@ -46,7 +46,7 @@ class UsersController < ApplicationController
     if user.nil?
       render nothing: true, status: 401
     else
-      render json: { user: user, token: gen_token(user.id) }
+      render json: { prescriptions: user.prescriptions, user: user, token: gen_token(user.id) }
     end
   end
 end

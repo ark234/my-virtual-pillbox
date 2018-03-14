@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import Prescriptions from './Prescriptions';
 
 export default class Home extends Component {
 	constructor(props) {
 		super(props);
 
-		this.handleClick = this.handleClick.bind(this);
+		this.clickHandler = this.clickHandler.bind(this);
 	}
 
-	handleClick() {
+	clickHandler() {
 		this.props.logout;
-		console.log('Logging out...');
 		this.props.history.push('/');
 	}
 
@@ -19,7 +19,8 @@ export default class Home extends Component {
 		return (
 			<div>
 				<div>Home</div>
-				<button onClick={this.handleClick}>Logout</button>
+				<button onClick={this.props.logout}>Logout</button>
+				<Prescriptions prescriptions={this.props.prescriptions} />
 			</div>
 		);
 	}
