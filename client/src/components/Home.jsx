@@ -10,16 +10,18 @@ export default class Home extends Component {
 		this.clickHandler = this.clickHandler.bind(this);
 	}
 
-	clickHandler() {
+	clickHandler(e) {
+		e.preventDefault();
 		this.props.logout;
 		this.props.history.push('/');
+		console.log('clicked!');
 	}
 
 	render() {
 		return (
 			<div>
 				<div>Home</div>
-				<button onClick={this.props.logout}>Logout</button>
+				<button onClick={this.clickHandler}>Logout</button>
 				<Prescriptions prescriptions={this.props.prescriptions} />
 			</div>
 		);

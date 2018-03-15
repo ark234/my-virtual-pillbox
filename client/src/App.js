@@ -121,8 +121,8 @@ class App extends Component {
 		return (
 			<div>
 				<nav>
-					<button onClick={this.getPrescriptions.bind(this)}>Get RX</button>
-					<button onClick={this.checkLogin.bind(this)}>Check If Logged In</button>
+					{/* <button onClick={this.getPrescriptions.bind(this)}>Get RX</button> */}
+					{/* <button onClick={this.checkLogin.bind(this)}>Check If Logged In</button> */}
 					{/* <button onClick={this.logout.bind(this)}>Logout</button> */}
 				</nav>
 				<BrowserRouter>
@@ -132,6 +132,14 @@ class App extends Component {
 							exact
 							path="/register"
 							component={props => <Register {...props} submit={this.register.bind(this)} />}
+						/>
+
+						<Route
+							exact
+							path="/home"
+							component={props => (
+								<Home {...props} prescriptions={this.state.prescriptions} logout={this.logout.bind(this)} />
+							)}
 						/>
 						{/* <Route
 							exact
@@ -145,13 +153,6 @@ class App extends Component {
 								)
 							}
 						/> */}
-						<Route
-							exact
-							path="/home"
-							component={props => (
-								<Home {...props} prescriptions={this.state.prescriptions} logout={this.logout.bind(this)} />
-							)}
-						/>
 						{/* <Route exact path="/login" component={props => <Login {...props} submit={this.login.bind(this)}  />} /> */}
 					</Switch>
 				</BrowserRouter>
