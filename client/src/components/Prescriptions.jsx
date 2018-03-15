@@ -11,6 +11,16 @@ export default class Prescriptions extends Component {
 		const prescriptions = this.props.prescriptions.map((el, i) => {
 			return <Prescription rx={el} key={el.id} />;
 		});
-		return <div>{prescriptions}</div>;
+		return (
+			<div>
+				<ul className="rx-list-labels">
+					<h5>Take</h5>
+					<h5>Name</h5>
+					<h5>Remaining</h5>
+				</ul>
+				<ul className="rx-list">{prescriptions}</ul>
+				<Link to="/prescriptions/new">Add Prescription</Link>
+			</div>
+		);
 	}
 }

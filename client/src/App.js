@@ -8,6 +8,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import TokenService from './services/TokenService';
 import PrescriptionDetail from './components/PrescriptionDetail';
+import NewPrescription from './components/NewPrescription';
 
 class App extends Component {
 	resetState() {
@@ -30,6 +31,10 @@ class App extends Component {
 		};
 
 		this.checkLogin = this.checkLogin.bind(this);
+		this.logout = this.logout.bind(this);
+		this.register = this.register.bind(this);
+		this.login = this.login.bind(this);
+		this.createPrescription = this.createPrescription.bind(this);
 	}
 
 	// API call for registration
@@ -87,9 +92,28 @@ class App extends Component {
 			.catch(error => console.log(`Error: ${error}`));
 	}
 
+	// Restricted route to add new prescription
+	createPrescription(data) {
+		axios('http://localhost:3000/prescriptions', {
+			method: 'POST',
+			headers: {
+				Authorization: `Bearer ${TokenService.read()}`
+			},
+			data
+		})
+			.then(response => {
+				// console.log('New prescription added successfully! Response Data:', response.data);
+				this.setState(prevState => {
+					prescriptions: prevState.prescriptions.push(response.data);
+					return prevState;
+				});
+				console.log('New prescription added successfully! Current prescription state:', this.state.prescriptions);
+			})
+			.catch(error => console.log(`Error: ${error}`));
+	}
+
 	// delete token to logout
-	logout(e) {
-		e.preventDefault();
+	logout() {
 		TokenService.destroy();
 		// this.setState({ isAuthed: false });
 		this.resetState();
@@ -128,42 +152,22 @@ class App extends Component {
 				</nav>
 				<BrowserRouter>
 					<Switch>
-						<Route exact path="/" component={props => <Login {...props} submit={this.login.bind(this)} />} />
-						<Route
-							exact
-							path="/register"
-							component={props => <Register {...props} submit={this.register.bind(this)} />}
-						/>
+						<Route exact path="/" component={props => <Login {...props} submit={this.login} />} />
+						<Route exact path="/register" component={props => <Register {...props} submit={this.register} />} />
 						<Route
 							exact
 							path="/home"
-							component={props => (
-								<Home {...props} prescriptions={this.state.prescriptions} logout={this.logout.bind(this)} />
-							)}
+							component={props => <Home {...props} prescriptions={this.state.prescriptions} logout={this.logout} />}
+						/>
+						<Route
+							exact
+							path="/prescriptions/new"
+							component={props => <NewPrescription {...props} submit={this.createPrescription} logout={this.logout} />}
 						/>
 						<Route
 							path="/prescriptions/:id"
-							component={props => (
-								<PrescriptionDetail
-									{...props}
-									prescriptions={this.state.prescriptions}
-									logout={this.logout.bind(this)}
-								/>
-							)}
+							component={props => <PrescriptionDetail {...props} rx={this.state.prescriptions} logout={this.logout} />}
 						/>
-						{/* <Route
-							exact
-							path="/home"
-							// component={props => <Home {...props} logout={this.logout.bind(this)} />}
-							render={props =>
-								this.state.isAuthed ? (
-									<Home {...props} prescriptions={this.state.prescriptions} logout={this.logout.bind(this)} />
-								) : (
-									<Redirect to="/" />
-								)
-							}
-						/> */}
-						{/* <Route exact path="/login" component={props => <Login {...props} submit={this.login.bind(this)}  />} /> */}
 					</Switch>
 				</BrowserRouter>
 			</div>

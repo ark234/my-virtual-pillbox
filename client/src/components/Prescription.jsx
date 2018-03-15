@@ -10,15 +10,11 @@ export default class Prescription extends Component {
 		const route = `/prescriptions/${this.props.rx.id}`;
 
 		return (
-			<ul>
-				<li>
-					<button>Take</button>
-				</li>
-				<li>
-					<Link to={route}>{this.props.rx.name}</Link>
-				</li>
-				<li>{this.props.rx.count_goal - this.props.rx.taken}</li>
-			</ul>
+			<li className="rx-list-item">
+				<button>Take</button>
+				<Link to={route}>{this.props.rx.name}</Link>
+				<span>{this.props.rx.count_goal - this.props.rx.taken}</span>
+			</li>
 		);
 	}
 }

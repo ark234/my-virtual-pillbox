@@ -10,6 +10,8 @@ class PrescriptionsController < ApplicationController
 
 	# TODO: create new prescription on uid
 	def create
+		new_prescription = current_user.prescriptions.create!(rx_params)
+		render json: new_prescription
 	end
 
 	# TODO: retrieve prescription on id

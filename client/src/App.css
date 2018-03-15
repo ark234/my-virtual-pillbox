@@ -4,6 +4,14 @@
 
 ul {
 	list-style: none;
+}
+
+li {
+	padding: 0;
+}
+
+.rx-list-item,
+.rx-list-labels {
 	display: flex;
 	justify-content: space-evenly;
 }
