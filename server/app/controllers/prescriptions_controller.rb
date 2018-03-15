@@ -14,6 +14,8 @@ class PrescriptionsController < ApplicationController
 
 	# TODO: retrieve prescription on id
 	def show
+		prescription = Prescription.find(params[:id])
+		render json: prescription
 	end
 
 	# TODO: update prescription on id

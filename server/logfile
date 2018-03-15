@@ -1,29 +1,13 @@
-2018-03-13 00:07:28.028 EDT [5500] LOG:  listening on IPv6 address "::1", port 5432
-2018-03-13 00:07:28.029 EDT [5500] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2018-03-13 00:07:28.190 EDT [1696] LOG:  database system was shut down at 2018-03-13 00:06:45 EDT
-2018-03-13 00:07:28.453 EDT [5500] LOG:  database system is ready to accept connections
-2018-03-13 00:07:33.701 EDT [9884] FATAL:  database "Ark" does not exist
-2018-03-13 00:10:02.882 EDT [10344] ERROR:  new encoding (UTF8) is incompatible with the encoding of the template database (WIN1252)
-2018-03-13 00:10:02.882 EDT [10344] HINT:  Use the same encoding as in the template database, or use template0 as template.
-2018-03-13 00:10:02.882 EDT [10344] STATEMENT:  CREATE DATABASE "server_development" ENCODING = 'unicode'
-2018-03-13 00:10:40.555 EDT [10868] ERROR:  new encoding (UTF8) is incompatible with the encoding of the template database (WIN1252)
-2018-03-13 00:10:40.555 EDT [10868] HINT:  Use the same encoding as in the template database, or use template0 as template.
-2018-03-13 00:10:40.555 EDT [10868] STATEMENT:  CREATE DATABASE "server_development" ENCODING = 'unicode'
-2018-03-13 00:13:43.083 EDT [14272] ERROR:  database "server_development" already exists
-2018-03-13 00:13:43.083 EDT [14272] STATEMENT:  CREATE DATABASE "server_development" ENCODING = 'unicode'
-2018-03-13 00:13:43.162 EDT [4044] ERROR:  database "server_test" already exists
-2018-03-13 00:13:43.162 EDT [4044] STATEMENT:  CREATE DATABASE "server_test" ENCODING = 'unicode'
-2018-03-13 03:10:43.439 EDT [5500] LOG:  statistics collector process (PID 5504) was terminated by exception 0x40010004
-2018-03-13 03:10:43.439 EDT [5500] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
-2018-03-13 03:10:43.836 EDT [3144] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
-	
-2018-03-13 03:10:44.112 EDT [5500] LOG:  autovacuum launcher process (PID 3816) was terminated by exception 0x40010004
-2018-03-13 03:10:44.112 EDT [5500] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
-2018-03-13 03:10:44.112 EDT [5500] LOG:  terminating any other active server processes
-2018-03-13 03:10:44.227 EDT [5500] LOG:  statistics collector process (PID 14252) was terminated by exception 0xC000026B
-2018-03-13 03:10:44.227 EDT [5500] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
-2018-03-13 03:10:44.227 EDT [5500] LOG:  all server processes terminated; reinitializing
-2018-03-13 03:10:44.318 EDT [5500] LOG:  startup process (PID 6068) was terminated by exception 0xC000026B
-2018-03-13 03:10:44.318 EDT [5500] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
-2018-03-13 03:10:44.318 EDT [5500] LOG:  aborting startup due to startup process failure
-2018-03-13 03:10:44.321 EDT [5500] LOG:  database system is shut down
+2018-03-15 00:50:15.011 EDT [4288] LOG:  listening on IPv6 address "::1", port 5432
+2018-03-15 00:50:15.011 EDT [4288] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-03-15 00:50:15.217 EDT [5044] LOG:  database system was interrupted; last known up at 2018-03-13 23:29:40 EDT
+2018-03-15 00:50:17.934 EDT [5044] LOG:  database system was not properly shut down; automatic recovery in progress
+2018-03-15 00:50:18.001 EDT [5044] LOG:  redo starts at 0/1805680
+2018-03-15 00:50:18.001 EDT [5044] LOG:  invalid record length at 0/1805760: wanted 24, got 0
+2018-03-15 00:50:18.002 EDT [5044] LOG:  redo done at 0/1805728
+2018-03-15 00:50:18.535 EDT [4288] LOG:  database system is ready to accept connections
+2018-03-15 00:52:20.389 EDT [4288] LOG:  received fast shutdown request
+2018-03-15 00:52:20.415 EDT [4288] LOG:  aborting any active transactions
+2018-03-15 00:52:20.420 EDT [4288] LOG:  worker process: logical replication launcher (PID 9908) exited with exit code 1
+2018-03-15 00:52:20.428 EDT [14688] LOG:  shutting down
+2018-03-15 00:52:20.692 EDT [4288] LOG:  database system is shut down

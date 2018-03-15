@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
 import TokenService from './services/TokenService';
+import PrescriptionDetail from './components/PrescriptionDetail';
 
 class App extends Component {
 	resetState() {
@@ -133,12 +134,21 @@ class App extends Component {
 							path="/register"
 							component={props => <Register {...props} submit={this.register.bind(this)} />}
 						/>
-
 						<Route
 							exact
 							path="/home"
 							component={props => (
 								<Home {...props} prescriptions={this.state.prescriptions} logout={this.logout.bind(this)} />
+							)}
+						/>
+						<Route
+							path="/prescriptions/:id"
+							component={props => (
+								<PrescriptionDetail
+									{...props}
+									prescriptions={this.state.prescriptions}
+									logout={this.logout.bind(this)}
+								/>
 							)}
 						/>
 						{/* <Route
