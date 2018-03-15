@@ -26,6 +26,9 @@ class PrescriptionsController < ApplicationController
 
 	# TODO: delete prescription on id
 	def destroy
+		prescription = Prescription.find(params[:id])
+		prescription.destroy!
+		render plain: "Prescription id #{params[:id]} deleted!"
 	end
 
 	private

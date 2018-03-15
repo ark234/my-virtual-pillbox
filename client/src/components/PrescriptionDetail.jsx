@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default class PrescriptionDetail extends Component {
 	constructor(props) {
 		super(props);
+
+		this.deleteHandler = this.deleteHandler.bind(this);
+	}
+
+	deleteHandler() {
+		this.props.deleteRx(this.props.match.params.id);
+		this.props.history.push('/home');
 	}
 
 	render() {
@@ -54,7 +61,7 @@ export default class PrescriptionDetail extends Component {
 						</li>
 					</ul>
 					<button>Edit</button>
-					<button>Delete</button>
+					<button onClick={this.deleteHandler}>Delete</button>
 				</div>
 			);
 		} else {

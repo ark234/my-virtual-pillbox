@@ -35,6 +35,7 @@ class App extends Component {
 		this.register = this.register.bind(this);
 		this.login = this.login.bind(this);
 		this.createPrescription = this.createPrescription.bind(this);
+		this.deletePrescription = this.deletePrescription.bind(this);
 	}
 
 	// API call for registration
@@ -112,6 +113,21 @@ class App extends Component {
 			.catch(error => console.log(`Error: ${error}`));
 	}
 
+	// Restricted route to delete a prescription
+	deletePrescription(id) {
+		axios(`http://localhost:3000/prescriptions/${id}`, {
+			method: 'DELETE',
+			headers: {
+				Authorization: `Bearer ${TokenService.read()}`
+			}
+		})
+			.then(response => {
+				console.log('Prescription deleted successfully!');
+				this.getPrescriptions();
+			})
+			.catch(error => console.log(`Error: ${error}`));
+	}
+
 	// delete token to logout
 	logout() {
 		TokenService.destroy();
@@ -166,7 +182,14 @@ class App extends Component {
 						/>
 						<Route
 							path="/prescriptions/:id"
-							component={props => <PrescriptionDetail {...props} rx={this.state.prescriptions} logout={this.logout} />}
+							component={props => (
+								<PrescriptionDetail
+									{...props}
+									rx={this.state.prescriptions}
+									deleteRx={this.deletePrescription}
+									logout={this.logout}
+								/>
+							)}
 						/>
 					</Switch>
 				</BrowserRouter>
