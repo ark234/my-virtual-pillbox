@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
-import TokenService from '../services/TokenService';
 import moment from 'moment';
+import TokenService from '../services/TokenService';
 
-export default class NewPrescription extends Component {
+export default class EditPrescription extends Component {
 	constructor(props) {
 		super(props);
 
@@ -26,6 +27,8 @@ export default class NewPrescription extends Component {
 	// send state back to parent
 	handleSubmit(e) {
 		e.preventDefault();
+		// since setState is async we want to wait for it to finish
+		// before submitting and redirecting
 		this.setState(prevState => {
 			return {
 				start_date: moment(prevState.start_date),
@@ -35,7 +38,7 @@ export default class NewPrescription extends Component {
 	}
 
 	submitAndRedirect() {
-		this.props.submit(this.state);
+		this.props.submit(this.state, this.props.match.params.id);
 		this.props.history.push('/home');
 	}
 
@@ -47,10 +50,28 @@ export default class NewPrescription extends Component {
 		});
 	}
 
+	componentDidMount() {
+		const rxid = this.props.match.params.id; // grabs rx id from params
+		const rx = this.props.prescriptions.find(el => el.id == rxid); // returns single prescription
+		console.log('rx ---->', rx);
+		this.setState({
+			name: rx.name,
+			dose: rx.dose,
+			count_goal: rx.count_goal,
+			recurring_period: rx.recurring_period,
+			start_date: rx.start_date,
+			end_date: rx.end_date,
+			notes: rx.notes,
+			taken: rx.taken,
+			goal_is_met: rx.goal_is_met
+		});
+	}
+
 	render() {
 		return (
 			<div>
-				<h1>Add Prescription</h1>
+				<Link to="/home">Go Back</Link>
+				<h1>Edit Prescription</h1>
 				<form onSubmit={this.handleSubmit}>
 					<label>
 						Name:
@@ -77,6 +98,11 @@ export default class NewPrescription extends Component {
 					<label>
 						Intake Goal:
 						<input type="number" name="count_goal" onChange={this.handleChange} value={this.state.count_goal} />
+					</label>
+					<br />
+					<label>
+						Pills Taken:
+						<input type="number" name="taken" onChange={this.handleChange} value={this.state.taken} />
 					</label>
 					<br />
 					<label>

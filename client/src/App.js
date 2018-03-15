@@ -9,6 +9,7 @@ import Register from './components/Register';
 import TokenService from './services/TokenService';
 import PrescriptionDetail from './components/PrescriptionDetail';
 import NewPrescription from './components/NewPrescription';
+import EditPrescription from './components/EditPrescription';
 
 class App extends Component {
 	resetState() {
@@ -36,6 +37,7 @@ class App extends Component {
 		this.login = this.login.bind(this);
 		this.createPrescription = this.createPrescription.bind(this);
 		this.deletePrescription = this.deletePrescription.bind(this);
+		this.getPrescriptions = this.getPrescriptions.bind(this);
 	}
 
 	// API call for registration
@@ -113,6 +115,22 @@ class App extends Component {
 			.catch(error => console.log(`Error: ${error}`));
 	}
 
+	// Restricted route to update a prescription
+	editPrescription(data, id) {
+		axios(`http://localhost:3000/prescriptions/${id}`, {
+			method: 'PUT',
+			headers: {
+				Authorization: `Bearer ${TokenService.read()}`
+			},
+			data
+		})
+			.then(response => {
+				console.log('Prescription updated successfully! New Data:', response.data);
+				this.setState({ prescriptions: response.data.prescriptions });
+			})
+			.catch(error => console.log(`Error: ${error}`));
+	}
+
 	// Restricted route to delete a prescription
 	deletePrescription(id) {
 		axios(`http://localhost:3000/prescriptions/${id}`, {
@@ -179,6 +197,17 @@ class App extends Component {
 							exact
 							path="/prescriptions/new"
 							component={props => <NewPrescription {...props} submit={this.createPrescription} logout={this.logout} />}
+						/>
+						<Route
+							path="/prescriptions/:id/edit"
+							component={props => (
+								<EditPrescription
+									{...props}
+									prescriptions={this.state.prescriptions}
+									submit={this.editPrescription}
+									logout={this.logout}
+								/>
+							)}
 						/>
 						<Route
 							path="/prescriptions/:id"

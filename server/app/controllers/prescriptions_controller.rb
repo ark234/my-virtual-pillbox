@@ -8,13 +8,13 @@ class PrescriptionsController < ApplicationController
 		render json: { prescriptions: current_user.prescriptions }
 	end
 
-	# TODO: create new prescription on uid
+	# create new prescription on uid
 	def create
 		new_prescription = current_user.prescriptions.create!(rx_params)
 		render json: new_prescription
 	end
 
-	# TODO: retrieve prescription on id
+	# retrieve prescription on id
 	def show
 		prescription = Prescription.find(params[:id])
 		render json: prescription
@@ -22,9 +22,12 @@ class PrescriptionsController < ApplicationController
 
 	# TODO: update prescription on id
 	def update
+		prescription = Prescription.find(params[:id])
+		prescription.update!(rx_params)
+		render json: prescription
 	end
 
-	# TODO: delete prescription on id
+	# delete prescription on id
 	def destroy
 		prescription = Prescription.find(params[:id])
 		prescription.destroy!
@@ -34,6 +37,6 @@ class PrescriptionsController < ApplicationController
 	private
 
 	def rx_params
-		params.require(:prescription).permit(:name, :dose, :count_goal, :recurring_period, :taken, :start_date, :end_date, :notes)
+		params.require(:prescription).permit(:name, :dose, :count_goal, :recurring_period, :taken, :last_taken, :goal_is_met, :start_date, :end_date, :notes)
 	end
 end

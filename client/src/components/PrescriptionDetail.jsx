@@ -41,7 +41,8 @@ export default class PrescriptionDetail extends Component {
 						<li>
 							<p>
 								Last Taken:&nbsp;
-								<Moment format="MM/DD/YYYY hh:mm a">{rx.last_taken}</Moment>
+								{/* <Moment format="MM/DD/YYYY hh:mm a">{rx.last_taken || ''}</Moment> */}
+								{rx.last_taken}
 							</p>
 						</li>
 						<li>
@@ -60,7 +61,7 @@ export default class PrescriptionDetail extends Component {
 							<p>Notes: {rx.notes}</p>
 						</li>
 					</ul>
-					<button>Edit</button>
+					<Link to={`/prescriptions/${rxid}/edit`}>Edit</Link>
 					<button onClick={this.deleteHandler}>Delete</button>
 				</div>
 			);

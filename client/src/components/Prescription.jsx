@@ -13,7 +13,9 @@ export default class Prescription extends Component {
 			<li className="rx-list-item">
 				<button>Take</button>
 				<Link to={route}>{this.props.rx.name}</Link>
-				<span>{this.props.rx.count_goal - this.props.rx.taken}</span>
+				<span>
+					{this.props.rx.count_goal - this.props.rx.taken} ({this.props.rx.recurring_period})
+				</span>
 			</li>
 		);
 	}
