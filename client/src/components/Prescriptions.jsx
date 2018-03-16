@@ -11,12 +11,21 @@ export default class Prescriptions extends Component {
 		return (
 			<div className="rx-list-container">
 				<ul className="rx-list-labels">
-					<h5 className="rx-label">Take</h5>
-					<h5 className="rx-label">Name</h5>
-					<h5 className="rx-label">Remaining</h5>
+					<li className="rx-label">
+						<h5>Take</h5>
+					</li>
+					<li className="rx-label">
+						<h5>Name</h5>
+					</li>
+					<li className="rx-label">
+						<h5>Remaining</h5>
+					</li>
 				</ul>
 				<ul className="rx-list">{prescriptions}</ul>
-				<Link to="/prescriptions/new">Add Prescription</Link>
+				<div className="link-container">
+					<Link to="/prescriptions/new">Add Prescription</Link>
+				</div>
+				<div className="footer" />
 			</div>
 		);
 	}

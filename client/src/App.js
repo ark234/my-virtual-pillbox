@@ -31,6 +31,9 @@ class App extends Component {
 			isAuthed: false
 		};
 
+		this.base =
+			process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://www.my-server.herokuapp.com';
+
 		this.checkLogin = this.checkLogin.bind(this);
 		this.logout = this.logout.bind(this);
 		this.register = this.register.bind(this);
@@ -44,7 +47,7 @@ class App extends Component {
 
 	// API call for registration
 	register(data) {
-		axios('http://localhost:3000/users', {
+		axios(`${this.base}/users`, {
 			method: 'POST',
 			data
 		})
@@ -62,7 +65,7 @@ class App extends Component {
 
 	// API call for login
 	login(data) {
-		axios('http://localhost:3000/users/login', {
+		axios(`${this.base}/users/login`, {
 			method: 'POST',
 			data
 		})
@@ -85,7 +88,7 @@ class App extends Component {
 	// Restricted route to retrieve user's prescriptions
 	getPrescriptions() {
 		// e.preventDefault();
-		axios('http://localhost:3000/prescriptions/', {
+		axios(`${this.base}/prescriptions`, {
 			headers: {
 				Authorization: `Bearer ${TokenService.read()}`
 			}
@@ -99,7 +102,7 @@ class App extends Component {
 
 	// Restricted route to add new prescription
 	createPrescription(data) {
-		axios('http://localhost:3000/prescriptions', {
+		axios(`${this.base}/prescriptions`, {
 			method: 'POST',
 			headers: {
 				Authorization: `Bearer ${TokenService.read()}`
@@ -119,7 +122,7 @@ class App extends Component {
 
 	// Restricted route to update a prescription
 	editPrescription(data, id) {
-		axios(`http://localhost:3000/prescriptions/${id}`, {
+		axios(`${this.base}/prescriptions/${id}`, {
 			method: 'PUT',
 			headers: {
 				Authorization: `Bearer ${TokenService.read()}`
@@ -139,7 +142,7 @@ class App extends Component {
 
 	// Restricted route to delete a prescription
 	deletePrescription(id) {
-		axios(`http://localhost:3000/prescriptions/${id}`, {
+		axios(`${this.base}/prescriptions/${id}`, {
 			method: 'DELETE',
 			headers: {
 				Authorization: `Bearer ${TokenService.read()}`
@@ -162,7 +165,7 @@ class App extends Component {
 
 	// check if user's logged in
 	checkLogin() {
-		axios('http://localhost:3000/isLoggedIn', {
+		axios(`${this.base}/isLoggedIn`, {
 			headers: {
 				Authorization: `Bearer ${TokenService.read()}`
 			}
@@ -178,7 +181,7 @@ class App extends Component {
 	}
 
 	takePill(id) {
-		axios(`http://localhost:3000/prescriptions/${id}/takePill`, {
+		axios(`${this.base}/prescriptions/${id}/takePill`, {
 			headers: {
 				Authorization: `Bearer ${TokenService.read()}`
 			}
@@ -202,6 +205,9 @@ class App extends Component {
 	render() {
 		return (
 			<main className="App">
+				<div className="header">
+					<h1 className="title">My Virtual Pillbox</h1>
+				</div>
 				<BrowserRouter>
 					<Switch>
 						<Route exact path="/" component={props => <Login {...props} submit={this.login} />} />

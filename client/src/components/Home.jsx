@@ -18,7 +18,7 @@ export default class Home extends Component {
 	render() {
 		return (
 			<div className="container">
-				<button onClick={this.clickHandler}>Logout</button>
+				<button className="logout-btn" onClick={this.clickHandler} />
 				<Prescriptions takePill={this.props.takePill} prescriptions={this.props.prescriptions} />
 			</div>
 		);

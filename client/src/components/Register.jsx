@@ -15,12 +15,19 @@ export default class Register extends Component {
 
 	render() {
 		return (
-			<div>
-				<h2>Register</h2>
-				<UserForm submit={this.onSubmit} />
-				<p>
-					<Link to="/">Login</Link>
-				</p>
+			<div className="form-container">
+				<div className="form-item">
+					<h2>Register</h2>
+				</div>
+				<div className="form-item">
+					<UserForm submit={this.onSubmit} />
+				</div>
+				<div className="form-item">
+					<Link className="form-link" to="/">
+						Login
+					</Link>
+				</div>
+				<div className="footer" />
 			</div>
 		);
 	}

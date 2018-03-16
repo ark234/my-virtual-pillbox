@@ -19,15 +19,15 @@ export default class Prescription extends Component {
 		return (
 			<li className="rx-list-item">
 				<div className="rx-item">
-					<button className="take-pill-btn" onClick={this.clickHandler}>
-						Take
-					</button>
+					<button className="take-pill-btn" onClick={this.clickHandler} />
 				</div>
-				<Link to={route} className="rx-item">
-					{this.props.rx.name}
-				</Link>
+				<div className="rx-item">
+					<Link to={route}>{this.props.rx.name}</Link>
+				</div>
 				<span className="rx-item">
-					{this.props.rx.count_goal - this.props.rx.taken} ({this.props.rx.recurring_period})
+					<div>
+						{this.props.rx.count_goal - this.props.rx.taken} ({this.props.rx.recurring_period})
+					</div>
 				</span>
 			</li>
 		);

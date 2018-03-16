@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Boogaloo');
+
 .App {
 	/* text-align: center; */
 	/* background: linear-gradient(177deg, rgb(9, 240, 9), rgb(138, 224, 157)); */
@@ -7,6 +9,8 @@
 	min-width: 100vw;
 	min-height: 100vh;
 	overflow: scroll;
+	font-family: 'Boogaloo', cursive;
+	font-variant: small-caps;
 }
 
 @keyframes slide-bg {
@@ -22,18 +26,47 @@
 }
 
 .container {
-	/* display: flex;
+	width: 100%;
+	height: 100%;
+	display: flex;
 	flex-direction: column;
-	justify-content: space-between; */
+	justify-content: space-between;
+}
+
+.header {
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 7.5vmin;
+}
+
+.title {
+	font-size: 11vmin;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(7, 47, 49);
+}
+
+a:hover {
+	color: rgb(255, 145, 0);
 }
 
 ul {
 	list-style: none;
 }
 
+h5 {
+	margin: 0;
+}
+
 .rx-list-container {
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 70%;
+	padding-top: 25px;
 	/* border: 2px solid red; */
 	/* overflow: scroll; */
 }
@@ -46,24 +79,165 @@ ul {
 .rx-list-labels {
 	display: flex;
 	justify-content: space-evenly;
-	flex-basis: auto;
 	padding: 0;
+	margin: 0;
 }
 
 .rx-list-item {
 	display: flex;
 	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 25px;
 }
 
-.rx-label,
 .rx-item {
 	width: 33%;
+	height: 12vmin;
+	/* text-align: center; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 6vmin;
+}
+
+.rx-label {
+	width: 33%;
 	height: 30px;
-	margin: 30px 0 30px 0;
-	text-align: center;
+	margin-bottom: 2vmin;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 7.5vmin;
 }
 
 .take-pill-btn {
-	width: 50px;
-	height: 50px;
+	height: 8vmin;
+	width: 8vmin;
+	background-image: url('./images/pills.svg');
+	background-size: cover;
+	background-color: transparent;
+	border: none;
+	animation: spin 30s linear infinite;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.logout-btn {
+	height: 8vmin;
+	width: 8vmin;
+	background-image: url('./images/logout.svg');
+	background-size: cover;
+	background-color: transparent;
+	border: none;
+	position: absolute;
+	right: 3.5vmin;
+	top: 3.5vmin;
+}
+
+.logout-btn:active {
+	transform: scale(0.9);
+}
+
+.take-pill-btn {
+	width: 12vmin;
+	height: 12vmin;
+}
+
+.link-container {
+	width: 33%;
+	height: 30px;
+	margin-bottom: 2vmin;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5.5vmin;
+}
+
+.footer {
+	height: 75px;
+	margin: 3.5vmin;
+}
+
+/* Login */
+.form-container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.form-item {
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-item h2 {
+	font-size: 9.5vmin;
+	margin: 0 0 3vmin 0;
+}
+
+.form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-label {
+	width: 100%;
+	/* height: 75px; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size: 20px;
+}
+
+.form-label p {
+	font-size: 4vmin;
+}
+
+.form-submit-btn {
+	background-color: rgba(128, 128, 128, 0.493);
+	border: 1px solid rgb(221, 159, 52);
+	border-radius: 10px;
+	font-size: 6vmin;
+	font-family: 'Boogaloo', cursive;
+	font-variant: small-caps;
+	box-shadow: steelblue 2px 2px;
+}
+
+.form-submit-btn:active {
+	transform: scale(0.9);
+}
+
+.form-link {
+	margin-top: 25px;
+	font-size: 3.5vmin;
+}
+
+.form-input {
+	margin-top: 2vmin;
+	width: 40%;
+	height: 3vmax;
+	max-height: 50px;
+	max-width: 30%;
+	border-radius: 10px;
+	font-size: 4vmin;
+	font-family: 'Boogaloo', cursive;
+}
+
+.form-item {
+	margin: 0;
 }
