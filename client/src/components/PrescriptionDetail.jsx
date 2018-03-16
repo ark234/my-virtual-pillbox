@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Moment from 'react-moment';
+import moment from 'moment';
 import { Link } from 'react-router-dom';
 
 export default class PrescriptionDetail extends Component {
@@ -41,8 +42,7 @@ export default class PrescriptionDetail extends Component {
 						<li>
 							<p>
 								Last Taken:&nbsp;
-								{/* <Moment format="MM/DD/YYYY hh:mm a">{rx.last_taken || ''}</Moment> */}
-								{rx.last_taken}
+								{rx.last_taken ? moment(rx.last_taken).format('MM/DD/YY hh:mm a') : 'n/a'}
 							</p>
 						</li>
 						<li>

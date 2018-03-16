@@ -14,7 +14,7 @@ class PrescriptionsController < ApplicationController
 		time = DateTime.now
 
 		if count >= prescription[:count_goal]
-			prescription.update!(taken: count, goal_is_met: true, last_taken: time)
+			prescription.update!(taken: prescription[:count_goal], goal_is_met: true, last_taken: time)
 		else
 			prescription.update!(taken: count, last_taken: time)
 		end
