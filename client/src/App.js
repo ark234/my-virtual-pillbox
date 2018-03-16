@@ -39,7 +39,7 @@ class App extends Component {
 		this.deletePrescription = this.deletePrescription.bind(this);
 		this.getPrescriptions = this.getPrescriptions.bind(this);
 		this.editPrescription = this.editPrescription.bind(this);
-		// this.setRx = this.setRx.bind(this);
+		this.takePill = this.takePill.bind(this);
 	}
 
 	// API call for registration
@@ -132,14 +132,9 @@ class App extends Component {
 					prevState.prescriptions = response.data;
 					return prevState;
 				});
-				// this.setRx(response.data.prescriptions);
 				console.log('Prescription edited successfully! prescription state:', this.state.prescriptions);
 			})
 			.catch(error => console.log(`Error: ${error}`));
-	}
-
-	setRx(data) {
-		this.setState({ prescriptions: data });
 	}
 
 	// Restricted route to delete a prescription
@@ -182,6 +177,23 @@ class App extends Component {
 			.catch(error => console.log(`Error: ${error}`));
 	}
 
+	takePill(id) {
+		axios(`http://localhost:3000/prescriptions/${id}/takePill`, {
+			headers: {
+				Authorization: `Bearer ${TokenService.read()}`
+			}
+		})
+			.then(response => {
+				console.log('Pill taken! Response data:', JSON.stringify(response.data));
+				this.setState({
+					prescriptions: response.data
+				});
+			})
+			.catch(error => {
+				console.log('Error:', error);
+			});
+	}
+
 	componentDidMount() {
 		this.checkLogin();
 		this.getPrescriptions();
@@ -189,12 +201,7 @@ class App extends Component {
 
 	render() {
 		return (
-			<div>
-				<nav>
-					{/* <button onClick={this.getPrescriptions.bind(this)}>Get RX</button> */}
-					{/* <button onClick={this.checkLogin.bind(this)}>Check If Logged In</button> */}
-					{/* <button onClick={this.logout.bind(this)}>Logout</button> */}
-				</nav>
+			<main className="App">
 				<BrowserRouter>
 					<Switch>
 						<Route exact path="/" component={props => <Login {...props} submit={this.login} />} />
@@ -202,7 +209,14 @@ class App extends Component {
 						<Route
 							exact
 							path="/home"
-							component={props => <Home {...props} prescriptions={this.state.prescriptions} logout={this.logout} />}
+							component={props => (
+								<Home
+									{...props}
+									takePill={this.takePill}
+									prescriptions={this.state.prescriptions}
+									logout={this.logout}
+								/>
+							)}
 						/>
 						<Route
 							exact
@@ -233,7 +247,7 @@ class App extends Component {
 						/>
 					</Switch>
 				</BrowserRouter>
-			</div>
+			</main>
 		);
 	}
 }

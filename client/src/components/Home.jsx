@@ -17,10 +17,9 @@ export default class Home extends Component {
 
 	render() {
 		return (
-			<div>
-				<div>Home</div>
+			<div className="container">
 				<button onClick={this.clickHandler}>Logout</button>
-				<Prescriptions prescriptions={this.props.prescriptions} />
+				<Prescriptions takePill={this.props.takePill} prescriptions={this.props.prescriptions} />
 			</div>
 		);
 	}

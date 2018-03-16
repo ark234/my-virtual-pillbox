@@ -8,6 +8,19 @@ class PrescriptionsController < ApplicationController
 		render json: current_user.prescriptions
 	end
 
+	def take_pill
+		prescription = Prescription.find(params[:id])
+		count = prescription[:taken] + 1
+
+		if count >= prescription[:count_goal]
+			prescription.update!(taken: count, goal_is_met: true)
+		else
+			prescription.update!(taken: count)
+		end
+
+		render json: current_user.prescriptions
+	end
+
 	# create new prescription on uid
 	def create
 		new_prescription = current_user.prescriptions.create!(rx_params)
