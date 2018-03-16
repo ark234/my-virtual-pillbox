@@ -83,3 +83,36 @@ Processing by UsersController#login as HTML
 Completed 200 OK in 83ms (Views: 0.5ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 05:14:47 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 05:14:47 -0400
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (8.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (14.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 65ms (Views: 0.6ms | ActiveRecord: 25.5ms)
+
+
+  [1m[36mPrescription Load (11.8ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 166ms (Views: 42.4ms | ActiveRecord: 55.8ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-03-16 05:15:00 -0400
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"ark", "password"=>"[FILTERED]", "user"=>{"username"=>"ark"}}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "ark"], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.4ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 154ms (Views: 2.2ms | ActiveRecord: 11.7ms)
+
+
+Started POST "/prescriptions" for 127.0.0.1 at 2018-03-16 05:15:20 -0400
+Processing by PrescriptionsController#create as HTML
+  Parameters: {"name"=>"Tylenol", "dose"=>"400mg", "count_goal"=>"4", "recurring_period"=>"daily", "start_date"=>"2018-03-22T04:00:00.000Z", "end_date"=>"2019-03-22T04:00:00.000Z", "notes"=>"Take with plenty of water.", "taken"=>0, "goal_is_met"=>false, "prescription"=>{"name"=>"Tylenol", "dose"=>"400mg", "count_goal"=>"4", "recurring_period"=>"daily", "taken"=>0, "goal_is_met"=>false, "start_date"=>"2018-03-22T04:00:00.000Z", "end_date"=>"2019-03-22T04:00:00.000Z", "notes"=>"Take with plenty of water."}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (3.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.3ms)[0m  [1m[32mINSERT INTO "prescriptions" ("user_id", "name", "dose", "count_goal", "recurring_period", "taken", "goal_is_met", "start_date", "end_date", "notes", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["user_id", 1], ["name", "Tylenol"], ["dose", "400mg"], ["count_goal", 4], ["recurring_period", "daily"], ["taken", 0], ["goal_is_met", "f"], ["start_date", "2018-03-22"], ["end_date", "2019-03-22"], ["notes", "Take with plenty of water."], ["created_at", "2018-03-16 09:15:20.641281"], ["updated_at", "2018-03-16 09:15:20.641281"]]
+  [1m[35m (71.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 116ms (Views: 1.2ms | ActiveRecord: 101.4ms)
+
+

@@ -31,7 +31,7 @@ class App extends Component {
 		};
 
 		this.base =
-			process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://www.my-server.herokuapp.com';
+			process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://my-virtual-pillbox.herokuapp.com/';
 
 		this.checkLogin = this.checkLogin.bind(this);
 		this.logout = this.logout.bind(this);
