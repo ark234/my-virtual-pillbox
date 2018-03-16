@@ -11,11 +11,12 @@ class PrescriptionsController < ApplicationController
 	def take_pill
 		prescription = Prescription.find(params[:id])
 		count = prescription[:taken] + 1
+		time = DateTime.now
 
 		if count >= prescription[:count_goal]
-			prescription.update!(taken: count, goal_is_met: true)
+			prescription.update!(taken: count, goal_is_met: true, last_taken: time)
 		else
-			prescription.update!(taken: count)
+			prescription.update!(taken: count, last_taken: time)
 		end
 
 		render json: current_user.prescriptions
