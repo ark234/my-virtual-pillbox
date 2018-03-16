@@ -26,8 +26,8 @@ export default class NewPrescription extends Component {
 		e.preventDefault();
 		this.setState(prevState => {
 			return {
-				start_date: moment(prevState.start_date),
-				end_date: moment(prevState.end_date)
+				start_date: moment(prevState.start_date, "MM-DD-YYYY"),
+				end_date: moment(prevState.end_date, "MM-DD-YYYY")
 			};
 		}, this.submitAndRedirect);
 	}
