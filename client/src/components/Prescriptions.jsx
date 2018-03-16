@@ -3,11 +3,8 @@ import { Link } from 'react-router-dom';
 import Prescription from './Prescription';
 
 export default class Prescriptions extends Component {
-	constructor(props) {
-		super(props);
-	}
-
 	render() {
+		console.log('PrEsCrIpTiOns:', this.props.prescriptions);
 		const prescriptions = this.props.prescriptions.map((el, i) => {
 			return <Prescription rx={el} key={el.id} />;
 		});

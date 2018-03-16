@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import TokenService from '../services/TokenService';
 import moment from 'moment';
 
 export default class NewPrescription extends Component {

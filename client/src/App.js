@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Link, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import axios from 'axios';
 import Home from './components/Home';
 import Login from './components/Login';
@@ -38,6 +38,8 @@ class App extends Component {
 		this.createPrescription = this.createPrescription.bind(this);
 		this.deletePrescription = this.deletePrescription.bind(this);
 		this.getPrescriptions = this.getPrescriptions.bind(this);
+		this.editPrescription = this.editPrescription.bind(this);
+		// this.setRx = this.setRx.bind(this);
 	}
 
 	// API call for registration
@@ -90,7 +92,7 @@ class App extends Component {
 		})
 			.then(response => {
 				console.log(`RX Data Retrieved: ${JSON.stringify(response.data)}`);
-				this.setState({ prescriptions: response.data.prescriptions });
+				this.setState({ prescriptions: response.data });
 			})
 			.catch(error => console.log(`Error: ${error}`));
 	}
@@ -107,7 +109,7 @@ class App extends Component {
 			.then(response => {
 				// console.log('New prescription added successfully! Response Data:', response.data);
 				this.setState(prevState => {
-					prescriptions: prevState.prescriptions.push(response.data);
+					prevState.prescriptions.push(response.data);
 					return prevState;
 				});
 				console.log('New prescription added successfully! Current prescription state:', this.state.prescriptions);
@@ -126,9 +128,18 @@ class App extends Component {
 		})
 			.then(response => {
 				console.log('Prescription updated successfully! New Data:', response.data);
-				this.setState({ prescriptions: response.data.prescriptions });
+				this.setState(prevState => {
+					prevState.prescriptions = response.data;
+					return prevState;
+				});
+				// this.setRx(response.data.prescriptions);
+				console.log('Prescription edited successfully! prescription state:', this.state.prescriptions);
 			})
 			.catch(error => console.log(`Error: ${error}`));
+	}
+
+	setRx(data) {
+		this.setState({ prescriptions: data });
 	}
 
 	// Restricted route to delete a prescription

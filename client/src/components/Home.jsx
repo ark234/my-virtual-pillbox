@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import { Link } from 'react-router-dom';
 import Prescriptions from './Prescriptions';
 
 export default class Home extends Component {
@@ -12,7 +10,7 @@ export default class Home extends Component {
 
 	clickHandler(e) {
 		e.preventDefault();
-		this.props.logout;
+		this.props.logout();
 		this.props.history.push('/');
 		console.log('clicked!');
 	}

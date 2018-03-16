@@ -5,7 +5,7 @@ class PrescriptionsController < ApplicationController
 		puts "--->in prescriptions#index"
 		puts "--->uid: #{current_user.id}"
 		# prescriptions = current_user.prescriptions
-		render json: { prescriptions: current_user.prescriptions }
+		render json: current_user.prescriptions
 	end
 
 	# create new prescription on uid
@@ -24,7 +24,7 @@ class PrescriptionsController < ApplicationController
 	def update
 		prescription = Prescription.find(params[:id])
 		prescription.update!(rx_params)
-		render json: prescription
+		render json: current_user.prescriptions
 	end
 
 	# delete prescription on id
