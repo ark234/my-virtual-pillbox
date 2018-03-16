@@ -46,9 +46,16 @@
 	margin: 0;
 }
 
+.bottom-nav {
+	display: flex;
+	justify-content: space-evenly;
+	width: 50%;
+}
+
 a {
 	text-decoration: none;
 	color: rgb(7, 47, 49);
+	font-size: 5vmin;
 }
 
 a:hover {
@@ -57,6 +64,7 @@ a:hover {
 
 ul {
 	list-style: none;
+	padding: 0;
 }
 
 h5 {
@@ -88,6 +96,10 @@ h5 {
 	justify-content: space-evenly;
 	align-items: center;
 	margin-bottom: 25px;
+}
+
+.rx-list-item-green {
+	background-color: rgba(30, 192, 124, 0.75);
 }
 
 .rx-item {
@@ -150,6 +162,11 @@ h5 {
 	height: 12vmin;
 }
 
+.home-link {
+	align-self: flex-start;
+	margin-left: 5vmin;
+}
+
 .link-container {
 	width: 33%;
 	height: 30px;
@@ -208,6 +225,12 @@ h5 {
 	font-size: 4vmin;
 }
 
+.delete-btn {
+	background-color: rgb(182, 59, 59);
+	border-radius: 10px;
+	width: 75px;
+}
+
 .form-submit-btn {
 	background-color: rgba(128, 128, 128, 0.493);
 	border: 1px solid rgb(221, 159, 52);
@@ -240,4 +263,46 @@ h5 {
 
 .form-item {
 	margin: 0;
+}
+
+/* RX FORM */
+.add-rx-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.rx-form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.rx-form-item {
+	height: 30px;
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.rx-form-label {
+	width: 60%;
+	/* text-align: center; */
+}
+
+.rx-form-input {
+	width: 40%;
+	border-radius: 10px;
+}
+
+.rx-form-submit {
+	background-color: rgba(128, 128, 128, 0.493);
+	border: 1px solid rgb(221, 159, 52);
+	border-radius: 10px;
+	font-size: 6vmin;
+	font-family: 'Boogaloo', cursive;
+	font-variant: small-caps;
+	box-shadow: steelblue 2px 2px;
 }

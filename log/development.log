@@ -679,3 +679,1128 @@ Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.3ms)
 Completed 200 OK in 12ms (Views: 3.2ms | ActiveRecord: 1.1ms)
 
 
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 10:00:00 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:00:00 -0400
+Processing by PrescriptionsController#index as HTML
+Processing by UsersController#is_logged_in as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mPrescription Load (0.7ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 10:00:18 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:00:18 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.4ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 10:00:59 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:00:59 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 10:02:16 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:02:16 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 10:06:07 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:06:07 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:09:16 -0400
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 10:09:16 -0400
+Processing by PrescriptionsController#index as HTML
+Processing by UsersController#is_logged_in as HTML
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 3.5ms)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 15ms (Views: 2.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 10:11:45 -0400
+Processing by UsersController#is_logged_in as HTML
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:11:45 -0400
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/prescriptions" for 127.0.0.1 at 2018-03-16 10:20:38 -0400
+Processing by PrescriptionsController#create as HTML
+  Parameters: {"name"=>"amlodapine", "dose"=>"5mg", "count_goal"=>"2", "recurring_period"=>"daily", "start_date"=>"2018-03-21T04:00:00.000Z", "end_date"=>"2019-03-21T04:00:00.000Z", "notes"=>"take with food", "taken"=>0, "goal_is_met"=>false, "prescription"=>{"name"=>"amlodapine", "dose"=>"5mg", "count_goal"=>"2", "recurring_period"=>"daily", "taken"=>0, "goal_is_met"=>false, "start_date"=>"2018-03-21T04:00:00.000Z", "end_date"=>"2019-03-21T04:00:00.000Z", "notes"=>"take with food"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "prescriptions" ("user_id", "name", "dose", "count_goal", "recurring_period", "taken", "goal_is_met", "start_date", "end_date", "notes", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["user_id", 1], ["name", "amlodapine"], ["dose", "5mg"], ["count_goal", 2], ["recurring_period", "daily"], ["taken", 0], ["goal_is_met", "f"], ["start_date", "2018-03-21"], ["end_date", "2019-03-21"], ["notes", "take with food"], ["created_at", "2018-03-16 14:20:38.904379"], ["updated_at", "2018-03-16 14:20:38.904379"]]
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:23:27 -0400
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 10:23:27 -0400
+Processing by UsersController#is_logged_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 10:23:36 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:23:36 -0400
+Processing by PrescriptionsController#index as HTML
+Processing by UsersController#is_logged_in as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mPrescription Load (0.9ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 10:25:39 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:25:39 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 10:34:09 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:34:09 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 7ms (Views: 3.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 10:50:11 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:50:11 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 32ms (Views: 0.5ms | ActiveRecord: 1.4ms)
+
+
+  [1m[36mPrescription Load (9.8ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 41ms (Views: 3.0ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 10:52:32 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:52:32 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 10:53:59 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:53:59 -0400
+Processing by UsersController#is_logged_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.8ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 10:54:19 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:54:19 -0400
+Processing by PrescriptionsController#index as HTML
+Processing by UsersController#is_logged_in as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 1.8ms)
+
+
+  [1m[36mPrescription Load (1.9ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 9ms (Views: 4.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/prescriptions/33/takePill" for 127.0.0.1 at 2018-03-16 10:55:31 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "last_taken" = $2, "updated_at" = $3 WHERE "prescriptions"."id" = $4[0m  [["taken", 1], ["last_taken", "2018-03-16 14:55:31.525562"], ["updated_at", "2018-03-16 14:55:31.526784"], ["id", 33]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 9ms (Views: 2.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/prescriptions/33/takePill" for 127.0.0.1 at 2018-03-16 10:55:32 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "goal_is_met" = $2, "last_taken" = $3, "updated_at" = $4 WHERE "prescriptions"."id" = $5[0m  [["taken", 2], ["goal_is_met", "t"], ["last_taken", "2018-03-16 14:55:32.598228"], ["updated_at", "2018-03-16 14:55:32.599388"], ["id", 33]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 9ms (Views: 2.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 10:58:40 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:58:40 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 23ms (Views: 0.5ms | ActiveRecord: 6.4ms)
+
+
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 58ms (Views: 1.5ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 10:58:46 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:58:46 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/prescriptions/33" for 127.0.0.1 at 2018-03-16 10:58:50 -0400
+Processing by PrescriptionsController#destroy as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "prescriptions" WHERE "prescriptions"."id" = $1[0m  [["id", 33]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:58:50 -0400
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/prescriptions/32" for 127.0.0.1 at 2018-03-16 10:58:53 -0400
+Processing by PrescriptionsController#destroy as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "prescriptions" WHERE "prescriptions"."id" = $1[0m  [["id", 32]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:58:53 -0400
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/prescriptions/31" for 127.0.0.1 at 2018-03-16 10:58:56 -0400
+Processing by PrescriptionsController#destroy as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "prescriptions" WHERE "prescriptions"."id" = $1[0m  [["id", 31]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 10:58:56 -0400
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/prescriptions" for 127.0.0.1 at 2018-03-16 10:59:14 -0400
+Processing by PrescriptionsController#create as HTML
+  Parameters: {"name"=>"new Pill", "dose"=>"5mg", "count_goal"=>"6", "recurring_period"=>"daily", "start_date"=>"2018-03-21T04:00:00.000Z", "end_date"=>"2019-03-22T04:00:00.000Z", "notes"=>"long time ago", "taken"=>0, "goal_is_met"=>false, "prescription"=>{"name"=>"new Pill", "dose"=>"5mg", "count_goal"=>"6", "recurring_period"=>"daily", "taken"=>0, "goal_is_met"=>false, "start_date"=>"2018-03-21T04:00:00.000Z", "end_date"=>"2019-03-22T04:00:00.000Z", "notes"=>"long time ago"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "prescriptions" ("user_id", "name", "dose", "count_goal", "recurring_period", "taken", "goal_is_met", "start_date", "end_date", "notes", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["user_id", 1], ["name", "new Pill"], ["dose", "5mg"], ["count_goal", 6], ["recurring_period", "daily"], ["taken", 0], ["goal_is_met", "f"], ["start_date", "2018-03-21"], ["end_date", "2019-03-22"], ["notes", "long time ago"], ["created_at", "2018-03-16 14:59:14.304823"], ["updated_at", "2018-03-16 14:59:14.304823"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/prescriptions/34/takePill" for 127.0.0.1 at 2018-03-16 10:59:16 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.4ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "last_taken" = $2, "updated_at" = $3 WHERE "prescriptions"."id" = $4[0m  [["taken", 1], ["last_taken", "2018-03-16 14:59:16.367184"], ["updated_at", "2018-03-16 14:59:16.368891"], ["id", 34]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/prescriptions/34/takePill" for 127.0.0.1 at 2018-03-16 10:59:19 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "last_taken" = $2, "updated_at" = $3 WHERE "prescriptions"."id" = $4[0m  [["taken", 2], ["last_taken", "2018-03-16 14:59:19.678491"], ["updated_at", "2018-03-16 14:59:19.679622"], ["id", 34]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 7ms (Views: 1.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/prescriptions/34/takePill" for 127.0.0.1 at 2018-03-16 10:59:21 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "last_taken" = $2, "updated_at" = $3 WHERE "prescriptions"."id" = $4[0m  [["taken", 3], ["last_taken", "2018-03-16 14:59:21.870276"], ["updated_at", "2018-03-16 14:59:21.871410"], ["id", 34]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 8ms (Views: 0.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/prescriptions/34/takePill" for 127.0.0.1 at 2018-03-16 10:59:24 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "last_taken" = $2, "updated_at" = $3 WHERE "prescriptions"."id" = $4[0m  [["taken", 4], ["last_taken", "2018-03-16 14:59:24.597312"], ["updated_at", "2018-03-16 14:59:24.598632"], ["id", 34]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/prescriptions/34/takePill" for 127.0.0.1 at 2018-03-16 10:59:26 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "last_taken" = $2, "updated_at" = $3 WHERE "prescriptions"."id" = $4[0m  [["taken", 5], ["last_taken", "2018-03-16 14:59:26.143769"], ["updated_at", "2018-03-16 14:59:26.145002"], ["id", 34]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 9ms (Views: 1.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/prescriptions/34/takePill" for 127.0.0.1 at 2018-03-16 10:59:29 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "goal_is_met" = $2, "last_taken" = $3, "updated_at" = $4 WHERE "prescriptions"."id" = $5[0m  [["taken", 6], ["goal_is_met", "t"], ["last_taken", "2018-03-16 14:59:29.490963"], ["updated_at", "2018-03-16 14:59:29.492114"], ["id", 34]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 8ms (Views: 1.1ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-03-16 11:16:57 -0400
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"ark", "password"=>"[FILTERED]", "user"=>{"username"=>"ark"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "ark"], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 100ms (Views: 15.1ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/prescriptions/34" for 127.0.0.1 at 2018-03-16 11:17:15 -0400
+Processing by PrescriptionsController#update as HTML
+  Parameters: {"name"=>"Old Pills", "dose"=>"5mg", "count_goal"=>6, "recurring_period"=>"daily", "start_date"=>"2018-03-21T04:00:00.000Z", "end_date"=>"2019-03-22T04:00:00.000Z", "notes"=>"long time ago", "taken"=>"0", "goal_is_met"=>true, "id"=>"34", "prescription"=>{"name"=>"Old Pills", "dose"=>"5mg", "count_goal"=>6, "recurring_period"=>"daily", "taken"=>"0", "goal_is_met"=>true, "start_date"=>"2018-03-21T04:00:00.000Z", "end_date"=>"2019-03-22T04:00:00.000Z", "notes"=>"long time ago"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "prescriptions" SET "name" = $1, "taken" = $2, "updated_at" = $3 WHERE "prescriptions"."id" = $4[0m  [["name", "Old Pills"], ["taken", 0], ["updated_at", "2018-03-16 15:17:15.830363"], ["id", 34]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 13ms (Views: 1.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 11:17:19 -0400
+Processing by UsersController#is_logged_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 11:17:19 -0400
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 1.0ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/prescriptions/34" for 127.0.0.1 at 2018-03-16 11:24:40 -0400
+Processing by PrescriptionsController#update as HTML
+  Parameters: {"name"=>"Old Pills", "dose"=>"5mg", "count_goal"=>6, "recurring_period"=>"daily", "start_date"=>"2018-03-21T04:00:00.000Z", "end_date"=>"2019-03-22T04:00:00.000Z", "notes"=>"long time ago", "taken"=>0, "goal_is_met"=>true, "id"=>"34", "prescription"=>{"name"=>"Old Pills", "dose"=>"5mg", "count_goal"=>6, "recurring_period"=>"daily", "taken"=>0, "goal_is_met"=>true, "start_date"=>"2018-03-21T04:00:00.000Z", "end_date"=>"2019-03-22T04:00:00.000Z", "notes"=>"long time ago"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.4ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+Unpermitted parameter: :goal_is_met
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.6ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/prescriptions_controller.rb:56:in `update'
+Started PUT "/prescriptions/34" for 127.0.0.1 at 2018-03-16 11:25:33 -0400
+Processing by PrescriptionsController#update as HTML
+  Parameters: {"name"=>"Old Pills", "dose"=>"5mg", "count_goal"=>"5", "recurring_period"=>"daily", "start_date"=>"2018-03-21T04:00:00.000Z", "end_date"=>"2019-03-22T04:00:00.000Z", "notes"=>"long time ago", "taken"=>0, "goal_is_met"=>true, "id"=>"34", "prescription"=>{"name"=>"Old Pills", "dose"=>"5mg", "count_goal"=>"5", "recurring_period"=>"daily", "taken"=>0, "goal_is_met"=>true, "start_date"=>"2018-03-21T04:00:00.000Z", "end_date"=>"2019-03-22T04:00:00.000Z", "notes"=>"long time ago"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.6ms)
+
+
+  
+ArgumentError (comparison of Integer with String failed):
+  
+app/controllers/prescriptions_controller.rb:53:in `>='
+app/controllers/prescriptions_controller.rb:53:in `update'
+Started PUT "/prescriptions/34" for 127.0.0.1 at 2018-03-16 11:29:01 -0400
+Processing by PrescriptionsController#update as HTML
+  Parameters: {"name"=>"New Pills", "dose"=>"5mg", "count_goal"=>"5", "recurring_period"=>"daily", "start_date"=>"2018-03-21T04:00:00.000Z", "end_date"=>"2019-03-22T04:00:00.000Z", "notes"=>"long time ago", "taken"=>0, "goal_is_met"=>true, "id"=>"34", "prescription"=>{"name"=>"New Pills", "dose"=>"5mg", "count_goal"=>"5", "recurring_period"=>"daily", "taken"=>0, "goal_is_met"=>true, "start_date"=>"2018-03-21T04:00:00.000Z", "end_date"=>"2019-03-22T04:00:00.000Z", "notes"=>"long time ago"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.6ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/prescriptions_controller.rb:56:in `update'
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 11:31:47 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 11:31:47 -0400
+Processing by PrescriptionsController#index as HTML
+Processing by UsersController#is_logged_in as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 2.3ms)
+
+
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.4ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+Completed 200 OK in 15ms (Views: 1.6ms | ActiveRecord: 3.3ms)
+
+
+Started PUT "/prescriptions/34" for 127.0.0.1 at 2018-03-16 11:33:00 -0400
+Processing by PrescriptionsController#update as HTML
+  Parameters: {"name"=>"New Pills", "dose"=>"5mg", "count_goal"=>"5", "recurring_period"=>"daily", "start_date"=>"2018-03-21T04:00:00.000Z", "end_date"=>"2019-03-22T04:00:00.000Z", "notes"=>"long time ago", "taken"=>0, "goal_is_met"=>false, "id"=>"34", "prescription"=>{"name"=>"New Pills", "dose"=>"5mg", "count_goal"=>"5", "recurring_period"=>"daily", "taken"=>0, "goal_is_met"=>false, "start_date"=>"2018-03-21T04:00:00.000Z", "end_date"=>"2019-03-22T04:00:00.000Z", "notes"=>"long time ago"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.4ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "prescriptions" SET "name" = $1, "count_goal" = $2, "goal_is_met" = $3, "updated_at" = $4 WHERE "prescriptions"."id" = $5[0m  [["name", "New Pills"], ["count_goal", 5], ["goal_is_met", "f"], ["updated_at", "2018-03-16 15:33:00.592204"], ["id", 34]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 49ms (Views: 1.2ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/prescriptions/34/takePill" for 127.0.0.1 at 2018-03-16 11:33:02 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "last_taken" = $2, "updated_at" = $3 WHERE "prescriptions"."id" = $4[0m  [["taken", 1], ["last_taken", "2018-03-16 15:33:02.926456"], ["updated_at", "2018-03-16 15:33:02.927947"], ["id", 34]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 10ms (Views: 1.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/prescriptions/34/takePill" for 127.0.0.1 at 2018-03-16 11:33:03 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "last_taken" = $2, "updated_at" = $3 WHERE "prescriptions"."id" = $4[0m  [["taken", 2], ["last_taken", "2018-03-16 15:33:03.211235"], ["updated_at", "2018-03-16 15:33:03.212665"], ["id", 34]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 10ms (Views: 1.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/prescriptions/34/takePill" for 127.0.0.1 at 2018-03-16 11:33:03 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "last_taken" = $2, "updated_at" = $3 WHERE "prescriptions"."id" = $4[0m  [["taken", 3], ["last_taken", "2018-03-16 15:33:03.390490"], ["updated_at", "2018-03-16 15:33:03.392117"], ["id", 34]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 10ms (Views: 1.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/prescriptions/34/takePill" for 127.0.0.1 at 2018-03-16 11:33:03 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "last_taken" = $2, "updated_at" = $3 WHERE "prescriptions"."id" = $4[0m  [["taken", 4], ["last_taken", "2018-03-16 15:33:03.690259"], ["updated_at", "2018-03-16 15:33:03.691890"], ["id", 34]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 10ms (Views: 1.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/prescriptions/34/takePill" for 127.0.0.1 at 2018-03-16 11:33:05 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "goal_is_met" = $2, "last_taken" = $3, "updated_at" = $4 WHERE "prescriptions"."id" = $5[0m  [["taken", 5], ["goal_is_met", "t"], ["last_taken", "2018-03-16 15:33:05.172695"], ["updated_at", "2018-03-16 15:33:05.174375"], ["id", 34]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 10ms (Views: 1.3ms | ActiveRecord: 3.5ms)
+
+
+Started PUT "/prescriptions/34" for 127.0.0.1 at 2018-03-16 11:33:12 -0400
+Processing by PrescriptionsController#update as HTML
+  Parameters: {"name"=>"New Pills", "dose"=>"5mg", "count_goal"=>"7", "recurring_period"=>"daily", "start_date"=>"2018-03-21T04:00:00.000Z", "end_date"=>"2019-03-22T04:00:00.000Z", "notes"=>"long time ago", "taken"=>5, "goal_is_met"=>false, "id"=>"34", "prescription"=>{"name"=>"New Pills", "dose"=>"5mg", "count_goal"=>"7", "recurring_period"=>"daily", "taken"=>5, "goal_is_met"=>false, "start_date"=>"2018-03-21T04:00:00.000Z", "end_date"=>"2019-03-22T04:00:00.000Z", "notes"=>"long time ago"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "prescriptions" SET "count_goal" = $1, "goal_is_met" = $2, "updated_at" = $3 WHERE "prescriptions"."id" = $4[0m  [["count_goal", 7], ["goal_is_met", "f"], ["updated_at", "2018-03-16 15:33:12.081499"], ["id", 34]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 13ms (Views: 1.0ms | ActiveRecord: 1.5ms)
+
+
+Started PUT "/prescriptions/1" for 127.0.0.1 at 2018-03-16 11:35:46 -0400
+Processing by PrescriptionsController#update as HTML
+  Parameters: {"name"=>"Prednisone", "dose"=>"5mg", "count_goal"=>"3", "recurring_period"=>"daily", "start_date"=>"2018-03-13T04:00:00.000Z", "end_date"=>"2018-03-14T04:00:00.000Z", "notes"=>"Makes you hungry!", "taken"=>1, "goal_is_met"=>false, "id"=>"1", "prescription"=>{"name"=>"Prednisone", "dose"=>"5mg", "count_goal"=>"3", "recurring_period"=>"daily", "taken"=>1, "goal_is_met"=>false, "start_date"=>"2018-03-13T04:00:00.000Z", "end_date"=>"2018-03-14T04:00:00.000Z", "notes"=>"Makes you hungry!"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.6ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "prescriptions" SET "count_goal" = $1, "goal_is_met" = $2, "updated_at" = $3 WHERE "prescriptions"."id" = $4[0m  [["count_goal", 3], ["goal_is_met", "f"], ["updated_at", "2018-03-16 15:35:46.804283"], ["id", 1]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.5ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 14ms (Views: 1.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/prescriptions/1/takePill" for 127.0.0.1 at 2018-03-16 11:35:52 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.5ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "last_taken" = $2, "updated_at" = $3 WHERE "prescriptions"."id" = $4[0m  [["taken", 2], ["last_taken", "2018-03-16 15:35:52.870268"], ["updated_at", "2018-03-16 15:35:52.871435"], ["id", 1]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/prescriptions/1/takePill" for 127.0.0.1 at 2018-03-16 11:35:54 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.5ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "goal_is_met" = $2, "last_taken" = $3, "updated_at" = $4 WHERE "prescriptions"."id" = $5[0m  [["taken", 3], ["goal_is_met", "t"], ["last_taken", "2018-03-16 15:35:54.434132"], ["updated_at", "2018-03-16 15:35:54.435321"], ["id", 1]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 9ms (Views: 1.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/prescriptions/34/takePill" for 127.0.0.1 at 2018-03-16 11:36:11 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "last_taken" = $2, "updated_at" = $3 WHERE "prescriptions"."id" = $4[0m  [["taken", 6], ["last_taken", "2018-03-16 15:36:11.513501"], ["updated_at", "2018-03-16 15:36:11.514914"], ["id", 34]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 9ms (Views: 1.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/prescriptions/34/takePill" for 127.0.0.1 at 2018-03-16 11:36:11 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "goal_is_met" = $2, "last_taken" = $3, "updated_at" = $4 WHERE "prescriptions"."id" = $5[0m  [["taken", 7], ["goal_is_met", "t"], ["last_taken", "2018-03-16 15:36:11.667231"], ["updated_at", "2018-03-16 15:36:11.669054"], ["id", 34]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 11ms (Views: 1.2ms | ActiveRecord: 3.5ms)
+
+
+Started DELETE "/prescriptions/34" for 127.0.0.1 at 2018-03-16 11:36:14 -0400
+Processing by PrescriptionsController#destroy as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.6ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "prescriptions" WHERE "prescriptions"."id" = $1[0m  [["id", 34]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 11:36:14 -0400
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/prescriptions/1" for 127.0.0.1 at 2018-03-16 11:37:08 -0400
+Processing by PrescriptionsController#update as HTML
+  Parameters: {"name"=>"Prednisone", "dose"=>"5mg", "count_goal"=>"4", "recurring_period"=>"daily", "start_date"=>"2018-03-13T04:00:00.000Z", "end_date"=>"2018-03-14T04:00:00.000Z", "notes"=>"Makes you hungry!", "taken"=>3, "goal_is_met"=>false, "id"=>"1", "prescription"=>{"name"=>"Prednisone", "dose"=>"5mg", "count_goal"=>"4", "recurring_period"=>"daily", "taken"=>3, "goal_is_met"=>false, "start_date"=>"2018-03-13T04:00:00.000Z", "end_date"=>"2018-03-14T04:00:00.000Z", "notes"=>"Makes you hungry!"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "prescriptions" SET "count_goal" = $1, "goal_is_met" = $2, "updated_at" = $3 WHERE "prescriptions"."id" = $4[0m  [["count_goal", 4], ["goal_is_met", "f"], ["updated_at", "2018-03-16 15:37:08.649507"], ["id", 1]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 17ms (Views: 1.3ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 11:39:40 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 11:39:40 -0400
+Processing by PrescriptionsController#index as HTML
+Processing by UsersController#is_logged_in as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mPrescription Load (0.8ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 14ms (Views: 1.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 11:40:35 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 11:40:35 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 1.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 11:42:31 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 11:42:31 -0400
+Processing by PrescriptionsController#index as HTML
+Processing by UsersController#is_logged_in as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.9ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 12ms (Views: 1.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 11:45:12 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 11:45:12 -0400
+Processing by UsersController#is_logged_in as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 1.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 11:45:30 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 11:45:30 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-03-16 11:45:32 -0400
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"ark", "password"=>"[FILTERED]", "user"=>{"username"=>"ark"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "ark"], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 76ms (Views: 1.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 11:46:24 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 11:46:24 -0400
+Processing by UsersController#is_logged_in as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 11:46:30 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 11:46:30 -0400
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by UsersController#is_logged_in as HTML
+  [1m[36mPrescription Load (0.6ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mPrescription Load (1.0ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 1.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 11:51:03 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 11:51:03 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 11:51:11 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 11:51:11 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 11:51:38 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 11:51:38 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.0ms)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 11:51:40 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 11:51:40 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 11:54:58 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 11:54:58 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.4ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 1.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 11:55:03 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 11:55:03 -0400
+Processing by PrescriptionsController#index as HTML
+Processing by UsersController#is_logged_in as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mPrescription Load (0.4ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 12:08:02 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 12:08:02 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mPrescription Load (0.4ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 1.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 12:08:49 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 12:08:49 -0400
+Processing by PrescriptionsController#index as HTML
+Processing by UsersController#is_logged_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mPrescription Load (0.8ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 1.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 12:11:42 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 12:11:42 -0400
+Processing by PrescriptionsController#index as HTML
+Processing by UsersController#is_logged_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mPrescription Load (1.0ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.4ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (1.0ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 1.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 12:12:37 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 12:12:37 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 1.0ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.5ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 1.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 12:14:48 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 12:14:48 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 1.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 12:15:13 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 12:15:13 -0400
+Processing by UsersController#is_logged_in as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.5ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.8ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.3ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 12ms (Views: 1.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 12:16:05 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 12:16:05 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-03-16 12:16:53 -0400
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"ark", "password"=>"[FILTERED]", "user"=>{"username"=>"ark"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "ark"], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.4ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 76ms (Views: 2.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/isLoggedIn" for 127.0.0.1 at 2018-03-16 12:17:58 -0400
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 12:17:58 -0400
+Processing by UsersController#is_logged_in as HTML
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-03-16 12:18:56 -0400
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"ark", "password"=>"[FILTERED]", "user"=>{"username"=>"ark"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "ark"], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 76ms (Views: 1.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/prescriptions" for 127.0.0.1 at 2018-03-16 12:19:39 -0400
+Processing by PrescriptionsController#create as HTML
+  Parameters: {"name"=>"Fluids", "dose"=>"50ml", "count_goal"=>"3", "recurring_period"=>"daily", "start_date"=>"2018-03-12T04:00:00.000Z", "end_date"=>"2019-03-12T04:00:00.000Z", "notes"=>"long time ago", "taken"=>0, "goal_is_met"=>false, "prescription"=>{"name"=>"Fluids", "dose"=>"50ml", "count_goal"=>"3", "recurring_period"=>"daily", "taken"=>0, "goal_is_met"=>false, "start_date"=>"2018-03-12T04:00:00.000Z", "end_date"=>"2019-03-12T04:00:00.000Z", "notes"=>"long time ago"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "prescriptions" ("user_id", "name", "dose", "count_goal", "recurring_period", "taken", "goal_is_met", "start_date", "end_date", "notes", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["user_id", 1], ["name", "Fluids"], ["dose", "50ml"], ["count_goal", 3], ["recurring_period", "daily"], ["taken", 0], ["goal_is_met", "f"], ["start_date", "2018-03-12"], ["end_date", "2019-03-12"], ["notes", "long time ago"], ["created_at", "2018-03-16 16:19:39.852488"], ["updated_at", "2018-03-16 16:19:39.852488"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/prescriptions/35" for 127.0.0.1 at 2018-03-16 12:19:56 -0400
+Processing by PrescriptionsController#update as HTML
+  Parameters: {"name"=>"Fluids", "dose"=>"50ml", "count_goal"=>3, "recurring_period"=>"daily", "start_date"=>"2018-03-12T04:00:00.000Z", "end_date"=>"2019-03-12T04:00:00.000Z", "notes"=>"long time ago", "taken"=>0, "goal_is_met"=>false, "id"=>"35", "prescription"=>{"name"=>"Fluids", "dose"=>"50ml", "count_goal"=>3, "recurring_period"=>"daily", "taken"=>0, "goal_is_met"=>false, "start_date"=>"2018-03-12T04:00:00.000Z", "end_date"=>"2019-03-12T04:00:00.000Z", "notes"=>"long time ago"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 7ms (Views: 1.0ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/prescriptions/35" for 127.0.0.1 at 2018-03-16 12:19:59 -0400
+Processing by PrescriptionsController#destroy as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.4ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "prescriptions" WHERE "prescriptions"."id" = $1[0m  [["id", 35]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/prescriptions" for 127.0.0.1 at 2018-03-16 12:19:59 -0400
+Processing by PrescriptionsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/prescriptions/1" for 127.0.0.1 at 2018-03-16 12:20:14 -0400
+Processing by PrescriptionsController#update as HTML
+  Parameters: {"name"=>"Prednisone", "dose"=>"5mg", "count_goal"=>4, "recurring_period"=>"daily", "start_date"=>"2018-03-13T04:00:00.000Z", "end_date"=>"2018-03-14T04:00:00.000Z", "notes"=>"Makes you hungry!", "taken"=>"0", "goal_is_met"=>false, "id"=>"1", "prescription"=>{"name"=>"Prednisone", "dose"=>"5mg", "count_goal"=>4, "recurring_period"=>"daily", "taken"=>"0", "goal_is_met"=>false, "start_date"=>"2018-03-13T04:00:00.000Z", "end_date"=>"2018-03-14T04:00:00.000Z", "notes"=>"Makes you hungry!"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "updated_at" = $2 WHERE "prescriptions"."id" = $3[0m  [["taken", 0], ["updated_at", "2018-03-16 16:20:14.938302"], ["id", 1]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 11ms (Views: 0.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/prescriptions/1/takePill" for 127.0.0.1 at 2018-03-16 12:20:16 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.1ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "last_taken" = $2, "updated_at" = $3 WHERE "prescriptions"."id" = $4[0m  [["taken", 1], ["last_taken", "2018-03-16 16:20:16.483689"], ["updated_at", "2018-03-16 16:20:16.485111"], ["id", 1]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/prescriptions/1/takePill" for 127.0.0.1 at 2018-03-16 12:20:17 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "last_taken" = $2, "updated_at" = $3 WHERE "prescriptions"."id" = $4[0m  [["taken", 2], ["last_taken", "2018-03-16 16:20:17.196305"], ["updated_at", "2018-03-16 16:20:17.197518"], ["id", 1]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/prescriptions/1/takePill" for 127.0.0.1 at 2018-03-16 12:20:17 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "last_taken" = $2, "updated_at" = $3 WHERE "prescriptions"."id" = $4[0m  [["taken", 3], ["last_taken", "2018-03-16 16:20:17.751194"], ["updated_at", "2018-03-16 16:20:17.752640"], ["id", 1]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/prescriptions/1/takePill" for 127.0.0.1 at 2018-03-16 12:20:18 -0400
+Processing by PrescriptionsController#take_pill as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT  "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "prescriptions" SET "taken" = $1, "goal_is_met" = $2, "last_taken" = $3, "updated_at" = $4 WHERE "prescriptions"."id" = $5[0m  [["taken", 4], ["goal_is_met", "t"], ["last_taken", "2018-03-16 16:20:18.169914"], ["updated_at", "2018-03-16 16:20:18.171690"], ["id", 1]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrescription Load (0.2ms)[0m  [1m[34mSELECT "prescriptions".* FROM "prescriptions" WHERE "prescriptions"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 10ms (Views: 0.8ms | ActiveRecord: 3.2ms)
+
+

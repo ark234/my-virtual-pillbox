@@ -23,8 +23,11 @@ export default class PrescriptionDetail extends Component {
 
 		if (rx) {
 			return (
-				<div>
-					<Link to="/home">Go Back</Link>
+				<div className="add-rx-container">
+					<div className="home-link">
+						<Link to="/home">Go Back</Link>
+					</div>
+					<button className="logout-btn" onClick={this.clickHandler} />
 					<ul>
 						<li>
 							<h1>{rx.name}</h1>
@@ -61,8 +64,12 @@ export default class PrescriptionDetail extends Component {
 							<p>Notes: {rx.notes}</p>
 						</li>
 					</ul>
-					<Link to={`/prescriptions/${rxid}/edit`}>Edit</Link>
-					<button onClick={this.deleteHandler}>Delete</button>
+					<div className="bottom-nav">
+						<Link to={`/prescriptions/${rxid}/edit`}>Edit</Link>
+						<button className="delete-btn" onClick={this.deleteHandler}>
+							Delete
+						</button>
+					</div>
 				</div>
 			);
 		} else {

@@ -15,9 +15,9 @@ export default class Prescription extends Component {
 
 	render() {
 		const route = `/prescriptions/${this.props.rx.id}`;
-
+		const classname = this.props.rx.goal_is_met ? 'rx-list-item rx-list-item-green' : 'rx-list-item';
 		return (
-			<li className="rx-list-item">
+			<li className={classname}>
 				<div className="rx-item">
 					<button className="take-pill-btn" onClick={this.clickHandler} />
 				</div>
